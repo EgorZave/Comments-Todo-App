@@ -1,7 +1,11 @@
 import { FC } from 'react';
 import "./item.scss"
 import useStore from '../../store/store';
-import { ItemT } from '../../types/ItemT';
+
+type ItemT = {
+   id: number;
+   text: string;
+};
 
 
 const Item: FC<ItemT> = ({ id, text }) => {
